@@ -1,12 +1,12 @@
-var gulp 				= require('gulp');
-sass 				= require('gulp-ruby-sass'),
-cssmin 			= require('gulp-minify-css'),
-csscomb 		= require('gulp-csscomb'),
-header  		= require('gulp-header'),
-plumber 		= require('gulp-plumber'),
-rename      = require('gulp-rename'),
-sourcemaps	= require('gulp-sourcemaps'),
-styledocco 	= require('gulp-styledocco');
+var gulp   = require('gulp');
+sass 	   = require('gulp-ruby-sass'),
+cssmin 	   = require('gulp-minify-css'),
+csscomb    = require('gulp-csscomb'),
+header     = require('gulp-header'),
+plumber    = require('gulp-plumber'),
+rename     = require('gulp-rename'),
+sourcemaps = require('gulp-sourcemaps'),
+styledocco = require('gulp-styledocco');
 
 
 gulp.task('sass', function() {

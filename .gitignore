@@ -1,0 +1,16 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# js
+/node_modules/
+
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
