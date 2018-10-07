@@ -1,0 +1,82 @@
+/*
+# card
+
+カードデザイン
+
+containerと併用して使う
+
+```
+<div class="c-container">
+  <div class="c-card">
+    <div class="c-card__header">
+      <h3>Header</h3>
+    </div>
+    <div class="c-card__content">
+        コンテンツ
+    </div>
+    <div class="c-card__bottom">
+      Bottom
+    </div>
+  </div>
+</div>
+```
+
+*/
+
+.c-card {
+  display: block;
+  width: 100%;
+  background: $base-color-white;
+  margin-bottom: $margin-base * 2;
+  position: relative;
+
+  @include box-shadow(0, 0, 2px, 0, rgba(10, 2, 4, .23));
+}
+
+// Modifier
+// --------------------
+.c-card--ov-x {
+  overflow-x: scroll;
+}
+
+// Element
+// --------------------
+.c-card__header {
+  border-bottom: 1px solid $default-color-lighten-20;
+  padding: $margin-base * 2 $margin-base * 2 0;
+}
+
+.c-card__content {
+  padding: $margin-base * 2;
+
+  h2 {
+    height: 40px;
+  }
+
+  p {
+    margin-bottom: $margin-base;
+  }
+
+  &--border {
+    border-top: 1px solid $default-color-lighten-20;
+  }
+}
+
+.c-card__content__clamp {
+  @include line-clamp(3);
+}
+
+.c-card__bottom {
+  border-top: 1px solid $default-color-lighten-20;
+  padding: $margin-base $margin-base * 2;
+  margin: 0;
+
+  p {
+    margin: 0;
+  }
+}
+
+.c-card__thumb {
+  width: 100%;
+  margin-bottom: 0;
+}

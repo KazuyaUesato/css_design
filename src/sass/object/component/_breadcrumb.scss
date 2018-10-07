@@ -1,0 +1,47 @@
+/*
+#beadcrumb
+
+```
+<div class="c-breadcrumb">
+  <ul class="c-inline c-breadcrumb__inner">
+    <li class="c-inline__cell">
+     <a href="#">Home</a> <i class="fa fa-angle-right"></i>
+   </li>
+   <li class="c-inline__cell">
+     <a href="#">hogehoge</a>
+   </li>
+ </ul>
+</div>
+```
+
+*/
+.c-breadcrumb {
+  width: 100%;
+  padding: $margin-base * 9 0 $margin-base * 2;
+  background: $base-color-white;
+  color: $default-color-lighten-10;
+
+  a {
+    color: $default-color-lighten-10;
+
+    &:hover {
+      color: $default-color-lighten-20;
+    }
+  }
+}
+
+// Element
+// --------------------
+.c-breadcrumb__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $margin-base * 2;
+}
+
+// PC only
+// --------------------
+@media (min-width: $breakpoint) {
+  .c-breadcrumb {
+    padding: $margin-base * 9 0 $margin-base * 2;
+  }
+}
